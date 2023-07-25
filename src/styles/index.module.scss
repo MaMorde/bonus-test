@@ -1,0 +1,13 @@
+.cardWrapper {
+  position: relative;
+}
+
+.redBlock {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 52px;
+  width: 375px;
+  height: 148px;
+  background: linear-gradient(180deg, #d2333e 0%, #f54b55 100%);
+}
