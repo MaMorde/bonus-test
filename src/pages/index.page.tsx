@@ -52,7 +52,6 @@ export default function Home() {
 
   return (
     <Layout>
-      <Header />
       <div className={styles.cardWrapper}>
         <div className={styles.redBlock}></div>
         {isLoading ? (
