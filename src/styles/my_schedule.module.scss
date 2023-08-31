@@ -1,0 +1,99 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.eventForm {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.eventForm input {
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.2s ease-in-out;
+
+  &:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+}
+
+.eventForm button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+.eventList {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.eventHeader {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.eventItem {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  color: white;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+
+  span:first-child {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.eventItem .deleteButton {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 3px 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .eventForm {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .eventForm input {
+    margin-bottom: 10px;
+  }
+}
+
+.noEvents {
+  color: white;
+}
